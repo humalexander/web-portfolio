@@ -32,51 +32,69 @@ export default function App() {
               stay updated with the latest industry trends.
             </p>
           </div>
-          <div className="flex gap-8 mb-2">
+
+          <div className="grid grid-cols-[auto,1fr] gap-x-12 gap-y-4 mb-2">
+            {/* Header Row */}
+            <p
+              className="text-sm uppercase opacity-75 mt-2"
+              style={{ fontFamily: 'var(--font-space-mono)' }}
+            >
+              Experience
+            </p>
+            <p
+              className="text-sm uppercase opacity-75 mt-2"
+              style={{ fontFamily: 'var(--font-space-mono)' }}
+            >
+              Description
+            </p>
+
+            {/* Data Rows */}
             <div>
               <p
-                className="text-sm uppercase opacity-75 my-4"
-                style={{ fontFamily: 'var(--font-space-mono)' }}
+                className="text-sm font-bold"
+                style={{ fontFamily: 'var(--font-space-sans)' }}
               >
-                Experience
+                Algonquin College
               </p>
-              <ul className="flex flex-col gap-2">
-                <li className="flex flex-col">
-                  <span
-                    className="text-sm font-bold"
-                    style={{ fontFamily: 'var(--font-space-sans)' }}
-                  >
-                    Algonquin College
-                  </span>
-                  <span
-                    className="text-sm font-bold min-w-32"
-                    style={{ fontFamily: 'var(--font-space-sans)' }}
-                  >
-                    2023 - Present
-                  </span>
-                </li>
-              </ul>
+              <p
+                className="text-sm italic"
+                style={{ fontFamily: 'var(--font-space-sans)' }}
+              >
+                2023 - Present
+              </p>
             </div>
+            <p
+              className="text-sm font-bold"
+              style={{ fontFamily: 'var(--font-space-sans)' }}
+            >
+              Enrolled in the Mobile Application Design and Development program,
+              where I am learning about app development, user experience design,
+              and software engineering.
+            </p>
+
             <div>
               <p
-                className="text-sm uppercase opacity-75 my-4"
-                style={{ fontFamily: 'var(--font-space-mono)' }}
+                className="text-sm font-bold"
+                style={{ fontFamily: 'var(--font-space-sans)' }}
               >
-                Description
+                Intro to Programming
               </p>
-              <ul className="flex flex-col gap-2">
-                <li className="flex flex-col">
-                  <span
-                    className="text-sm font-bold"
-                    style={{ fontFamily: 'var(--font-space-sans)' }}
-                  >
-                    Enrolled in the Mobile Application Design and Development
-                    program, I learned both front-end and back-end development.
-                  </span>
-                </li>
-              </ul>
+              <p
+                className="text-sm italic"
+                style={{ fontFamily: 'var(--font-space-sans)' }}
+              >
+                2021 - 2022
+              </p>
             </div>
+            <p
+              className="text-sm font-bold"
+              style={{ fontFamily: 'var(--font-space-sans)' }}
+            >
+              Completed an introductory programming course where I learned the
+              fundamentals of programming and software development.
+            </p>
           </div>
+
           <div className="flex flex-col">
             <p
               className="mb-4 text-sm uppercase opacity-75 my-4"
