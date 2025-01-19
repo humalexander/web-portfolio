@@ -10,7 +10,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <section id="banner">
+      <section id="banner" className="bg-neutral-900">
         <div className="container mx-auto p-4">
           <div className="flex flex-col mb-4">
             <span
@@ -126,7 +126,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="skills">
+      <section id="skills" className="bg-neutral-900">
         <div className={styles.rolling_skills}>
           <ul>
             <li>
