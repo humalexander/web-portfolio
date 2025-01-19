@@ -310,7 +310,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="contact" className="mb-8 pt-8 w-full bg-neutral-900">
+      <section id="contact" className="py-8 w-full bg-neutral-900">
         <div className="container mx-auto p-4">
           <h2
             className="text-xl font-semibold pb-2"
