@@ -1,3 +1,5 @@
+'use client'
+
 import styles from './page.module.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -5,8 +7,17 @@ import projects from './data/projects.json'
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 
 export default function App() {
+  const [filter, setFilter] = useState<
+    'All' | 'Personal Project' | 'Client Project'
+  >('All')
+
+  const filteredProjects =
+    filter === 'All'
+      ? projects
+      : projects.filter((project) => project.type === filter)
   return (
     <>
       <Navbar />
@@ -144,7 +155,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="skills" className="bg-neutral-900">
+      <section id="skills" className="bg-neutral-900 pb-4">
         <div className={styles.rolling_skills}>
           <ul>
             <li>
@@ -265,14 +276,41 @@ export default function App() {
 
       <section id="projects" className="pb-4 bg-neutral-950">
         <div className="container mx-auto p-4">
-          <h2
-            className="text-xl font-semibold pb-8 pt-2"
-            style={{ fontFamily: 'var(--font-space-mono)' }}
-          >
-            Projects
-          </h2>
+          <div className="flex justify-between items-center pb-8 pt-2">
+            <h2
+              className="text-xl font-semibold"
+              style={{ fontFamily: 'var(--font-space-mono)' }}
+            >
+              Projects
+            </h2>
+            <div className="flex items-center gap-4">
+              <label
+                className="text-sm font-bold"
+                style={{ fontFamily: 'var(--font-space-mono)' }}
+              >
+                Filter:
+              </label>
+              <select
+                value={filter}
+                onChange={(e) =>
+                  setFilter(
+                    e.target.value as
+                      | 'All'
+                      | 'Personal Project'
+                      | 'Client Project'
+                  )
+                }
+                className="text-sm text-neutral-400 bg-neutral-800 hover:bg-neutral-700 py-2 px-4 rounded-md"
+                style={{ fontFamily: 'var(--font-space-sans)' }}
+              >
+                <option value="All">All</option>
+                <option value="Personal Project">Personal</option>
+                <option value="Client">Client</option>
+              </select>
+            </div>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-fr">
-            {projects.map((project) => (
+            {filteredProjects.map((project) => (
               <div key={project.id} id={project.id} className="">
                 <Image
                   src={project.images[0]}
