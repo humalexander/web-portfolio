@@ -9,232 +9,230 @@ import Link from 'next/link'
 export default function App() {
   return (
     <>
-      <div className="top-0 sticky -z-20">
-        <Navbar />
-        <section id="banner">
-          <div className="container mx-auto p-4">
-            <div className="flex flex-col mb-4">
-              <span
-                className="mb-4 text-sm uppercase opacity-75"
+      <Navbar />
+      <section id="banner">
+        <div className="container mx-auto p-4">
+          <div className="flex flex-col mb-4">
+            <span
+              className="mb-4 text-sm uppercase opacity-75"
+              style={{ fontFamily: 'var(--font-space-mono)' }}
+            >
+              About
+            </span>
+            <p
+              className="text-sm font-bold"
+              style={{ fontFamily: 'var(--font-space-sans)' }}
+            >
+              I am a software engineer with a strong background in full-stack
+              development. I have experience working with a variety of
+              technologies including React, Node.js, and TypeScript. I am
+              passionate about creating efficient and scalable web applications,
+              and I enjoy solving complex problems and learning new skills. In
+              my free time, I like to contribute to open-source projects and
+              stay updated with the latest industry trends.
+            </p>
+          </div>
+          <div className="flex gap-8 mb-2">
+            <div>
+              <p
+                className="text-sm uppercase opacity-75 my-4"
                 style={{ fontFamily: 'var(--font-space-mono)' }}
               >
-                About
-              </span>
-              <p
-                className="text-sm font-bold"
-                style={{ fontFamily: 'var(--font-space-sans)' }}
-              >
-                I am a software engineer with a strong background in full-stack
-                development. I have experience working with a variety of
-                technologies including React, Node.js, and TypeScript. I am
-                passionate about creating efficient and scalable web
-                applications, and I enjoy solving complex problems and learning
-                new skills. In my free time, I like to contribute to open-source
-                projects and stay updated with the latest industry trends.
+                Experience
               </p>
+              <ul className="flex flex-col gap-2">
+                <li className="flex flex-col">
+                  <span
+                    className="text-sm font-bold"
+                    style={{ fontFamily: 'var(--font-space-sans)' }}
+                  >
+                    Algonquin College
+                  </span>
+                  <span
+                    className="text-sm font-bold min-w-32"
+                    style={{ fontFamily: 'var(--font-space-sans)' }}
+                  >
+                    2023 - Present
+                  </span>
+                </li>
+              </ul>
             </div>
-            <div className="flex gap-8 mb-2">
-              <div>
-                <p
-                  className="text-sm uppercase opacity-75 my-4"
-                  style={{ fontFamily: 'var(--font-space-mono)' }}
-                >
-                  Experience
-                </p>
-                <ul className="flex flex-col gap-2">
-                  <li className="flex flex-col">
-                    <span
-                      className="text-sm font-bold"
-                      style={{ fontFamily: 'var(--font-space-sans)' }}
-                    >
-                      Algonquin College
-                    </span>
-                    <span
-                      className="text-sm font-bold min-w-32"
-                      style={{ fontFamily: 'var(--font-space-sans)' }}
-                    >
-                      2023 - Present
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <p
-                  className="text-sm uppercase opacity-75 my-4"
-                  style={{ fontFamily: 'var(--font-space-mono)' }}
-                >
-                  Description
-                </p>
-                <ul className="flex flex-col gap-2">
-                  <li className="flex flex-col">
-                    <span
-                      className="text-sm font-bold"
-                      style={{ fontFamily: 'var(--font-space-sans)' }}
-                    >
-                      Enrolled in the Mobile Application Design and Development
-                      program, I learned both front-end and back-end
-                      development.
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="flex flex-col">
+            <div>
               <p
-                className="mb-4 text-sm uppercase opacity-75 my-4"
+                className="text-sm uppercase opacity-75 my-4"
                 style={{ fontFamily: 'var(--font-space-mono)' }}
               >
-                TECHNOLOGY
+                Description
               </p>
-              <ul className="flex flex-wrap gap-4">
-                <li
-                  className="text-sm font-bold"
-                  style={{ fontFamily: 'var(--font-space-sans)' }}
-                >
-                  Swift
-                </li>
-                <li
-                  className="text-sm font-bold"
-                  style={{ fontFamily: 'var(--font-space-sans)' }}
-                >
-                  Kotlin
-                </li>
-                <li
-                  className="text-sm font-bold"
-                  style={{ fontFamily: 'var(--font-space-sans)' }}
-                >
-                  TypeScript
-                </li>
-                <li
-                  className="text-sm font-bold"
-                  style={{ fontFamily: 'var(--font-space-sans)' }}
-                >
-                  React
-                </li>
-                <li
-                  className="text-sm font-bold"
-                  style={{ fontFamily: 'var(--font-space-sans)' }}
-                >
-                  React Native
-                </li>
-                <li
-                  className="text-sm font-bold"
-                  style={{ fontFamily: 'var(--font-space-sans)' }}
-                >
-                  Flutter
+              <ul className="flex flex-col gap-2">
+                <li className="flex flex-col">
+                  <span
+                    className="text-sm font-bold"
+                    style={{ fontFamily: 'var(--font-space-sans)' }}
+                  >
+                    Enrolled in the Mobile Application Design and Development
+                    program, I learned both front-end and back-end development.
+                  </span>
                 </li>
               </ul>
             </div>
           </div>
-        </section>
-
-        <section id="skills">
-          <div className={styles.rolling_skills}>
-            <ul>
-              <li>
-                <Image
-                  src={'/assets/swift.svg'}
-                  alt="Swift"
-                  width={50}
-                  height={50}
-                />
+          <div className="flex flex-col">
+            <p
+              className="mb-4 text-sm uppercase opacity-75 my-4"
+              style={{ fontFamily: 'var(--font-space-mono)' }}
+            >
+              TECHNOLOGY
+            </p>
+            <ul className="flex flex-wrap gap-4">
+              <li
+                className="text-sm font-bold"
+                style={{ fontFamily: 'var(--font-space-sans)' }}
+              >
+                Swift
               </li>
-              <li>
-                <Image
-                  src={'/assets/kotlin.svg'}
-                  alt="Kotlin"
-                  width={50}
-                  height={50}
-                />
+              <li
+                className="text-sm font-bold"
+                style={{ fontFamily: 'var(--font-space-sans)' }}
+              >
+                Kotlin
               </li>
-              <li>
-                <Image
-                  src={'/assets/javascript.svg'}
-                  alt="JavaScript"
-                  width={50}
-                  height={50}
-                />
+              <li
+                className="text-sm font-bold"
+                style={{ fontFamily: 'var(--font-space-sans)' }}
+              >
+                TypeScript
               </li>
-              <li>
-                <Image
-                  src={'/assets/typescript.svg'}
-                  alt="TypeScript"
-                  width={50}
-                  height={50}
-                />
+              <li
+                className="text-sm font-bold"
+                style={{ fontFamily: 'var(--font-space-sans)' }}
+              >
+                React
               </li>
-              <li>
-                <Image
-                  src={'/assets/react.svg'}
-                  alt="React"
-                  width={50}
-                  height={50}
-                />
+              <li
+                className="text-sm font-bold"
+                style={{ fontFamily: 'var(--font-space-sans)' }}
+              >
+                React Native
               </li>
-              <li>
-                <Image
-                  src={'/assets/flutter.svg'}
-                  alt="Flutter"
-                  width={50}
-                  height={50}
-                />
-              </li>
-            </ul>
-
-            <ul aria-hidden="true">
-              {/* Duplicate for seamless looping */}
-              <li>
-                <Image
-                  src={'/assets/swift.svg'}
-                  alt="Swift"
-                  width={50}
-                  height={50}
-                />
-              </li>
-              <li>
-                <Image
-                  src={'/assets/kotlin.svg'}
-                  alt="Kotlin"
-                  width={50}
-                  height={50}
-                />
-              </li>
-              <li>
-                <Image
-                  src={'/assets/javascript.svg'}
-                  alt="JavaScript"
-                  width={50}
-                  height={50}
-                />
-              </li>
-              <li>
-                <Image
-                  src={'/assets/typescript.svg'}
-                  alt="TypeScript"
-                  width={50}
-                  height={50}
-                />
-              </li>
-              <li>
-                <Image
-                  src={'/assets/react.svg'}
-                  alt="React"
-                  width={50}
-                  height={50}
-                />
-              </li>
-              <li>
-                <Image
-                  src={'/assets/flutter.svg'}
-                  alt="Flutter"
-                  width={50}
-                  height={50}
-                />
+              <li
+                className="text-sm font-bold"
+                style={{ fontFamily: 'var(--font-space-sans)' }}
+              >
+                Flutter
               </li>
             </ul>
           </div>
+        </div>
+      </section>
 
-          {/* <div className="flex flex-col my-4">
+      <section id="skills">
+        <div className={styles.rolling_skills}>
+          <ul>
+            <li>
+              <Image
+                src={'/assets/swift.svg'}
+                alt="Swift"
+                width={50}
+                height={50}
+              />
+            </li>
+            <li>
+              <Image
+                src={'/assets/kotlin.svg'}
+                alt="Kotlin"
+                width={50}
+                height={50}
+              />
+            </li>
+            <li>
+              <Image
+                src={'/assets/javascript.svg'}
+                alt="JavaScript"
+                width={50}
+                height={50}
+              />
+            </li>
+            <li>
+              <Image
+                src={'/assets/typescript.svg'}
+                alt="TypeScript"
+                width={50}
+                height={50}
+              />
+            </li>
+            <li>
+              <Image
+                src={'/assets/react.svg'}
+                alt="React"
+                width={50}
+                height={50}
+              />
+            </li>
+            <li>
+              <Image
+                src={'/assets/flutter.svg'}
+                alt="Flutter"
+                width={50}
+                height={50}
+              />
+            </li>
+          </ul>
+
+          <ul aria-hidden="true">
+            {/* Duplicate for seamless looping */}
+            <li>
+              <Image
+                src={'/assets/swift.svg'}
+                alt="Swift"
+                width={50}
+                height={50}
+              />
+            </li>
+            <li>
+              <Image
+                src={'/assets/kotlin.svg'}
+                alt="Kotlin"
+                width={50}
+                height={50}
+              />
+            </li>
+            <li>
+              <Image
+                src={'/assets/javascript.svg'}
+                alt="JavaScript"
+                width={50}
+                height={50}
+              />
+            </li>
+            <li>
+              <Image
+                src={'/assets/typescript.svg'}
+                alt="TypeScript"
+                width={50}
+                height={50}
+              />
+            </li>
+            <li>
+              <Image
+                src={'/assets/react.svg'}
+                alt="React"
+                width={50}
+                height={50}
+              />
+            </li>
+            <li>
+              <Image
+                src={'/assets/flutter.svg'}
+                alt="Flutter"
+                width={50}
+                height={50}
+              />
+            </li>
+          </ul>
+        </div>
+
+        {/* <div className="flex flex-col my-4">
             <h3 className="text-3xl font-bold opacity-75 hover:opacity-100">
               Cross-platform Development
             </h3>
@@ -245,8 +243,7 @@ export default function App() {
               Web Development
             </h3>
           </div> */}
-        </section>
-      </div>
+      </section>
 
       <section id="projects" className="pb-4 bg-neutral-950">
         <div className="container mx-auto p-4">
@@ -309,32 +306,9 @@ export default function App() {
           </div>
         </div>
       </section>
-
-      <section id="contact" className="py-8 w-full bg-neutral-900">
-        <div className="container mx-auto p-4">
-          <h2
-            className="text-xl font-semibold pb-2"
-            style={{ fontFamily: 'var(--font-space-mono)' }}
-          >
-            Get in Touch.
-          </h2>
-          <p
-            className="text-sm font-bold"
-            style={{ fontFamily: 'var(--font-space-sans)' }}
-          >
-            I&apos;d love to help you create your next big idea.
-          </p>
-
-          <a
-            href="mailto:alexanderhum@icloud.com"
-            className="block w-full text-black bg-white font-bold py-2 px-4 rounded-md mt-4"
-            style={{ fontFamily: 'var(--font-space-mono)' }}
-          >
-            Contact
-          </a>
-        </div>
-      </section>
-      <Footer />
+      <div className="sticky bottom-0 -z-20">
+        <Footer />
+      </div>
     </>
   )
 }
