@@ -1,0 +1,30 @@
+.rolling_skills {
+    padding-block: 16px;
+    overflow: hidden;
+    user-select: none;
+    display: flex;
+    --gap: 20px;
+    gap: var(--gap);
+}
+
+.rolling_skills ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: var(--gap);
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    animation: scroll 30s linear infinite;
+}
+
+.rolling_skills:hover ul {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+
+}

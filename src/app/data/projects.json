@@ -1,0 +1,86 @@
+[
+  {
+    "id": "weather-watch-ios",
+    "title": "Weather Watch",
+    "platform": "iOS",
+    "type": "Personal Project",
+    "year": "2024",
+    "description": "A native iOS app that displays the current weather for a saved location, utilizing Apple's WeatherKit.",
+    "tags" : ["Swift", "UIKit", "WeatherKit"],
+    "features": ["User can save a location to view the current weather.", "User can view the current weather for the saved location."],
+    "links": [],
+    "images": [
+      "/assets/weather-watch-ios-mockup-small.png",
+      "/assets/weather-watch-ios-mockup-large.png"
+    ]
+  },
+  {
+    "id": "weather-watch-web",
+    "title": "Weather Watch",
+    "platform": "Web",
+    "year": "2024",
+    "description": "A React web app that displays the current weather for a saved location, utilizing the OpenWeatherMap API.",
+    "tags" : ["React", "API Integration"],
+    "features": ["User can save a location to view the current weather.", "User can view the current weather for the saved location."],
+    "links": [
+      {
+        "text": "View Live",
+        "url": "https://react-weather-app-beta-orcin.vercel.app/",
+        "icon": "/assets/arrow-top-right.svg"
+      }
+    ],
+    "images": [
+      "/assets/weather-watch-web-mockup-small.png",
+      "/assets/weather-watch-web-mockup-large.png"
+    ]
+  },
+  {
+    "id": "movie-finder",
+    "title": "Movie Finder",
+    "platform": "Web",
+    "year": "2024",
+    "description": "A progressive web app that allows users to search for movies and view details, utilizing the TMDb API.",
+    "tags" : ["JavaScript", "API Integration"],
+    "features": ["User can search for movies by title.", "User can view details of a movie."],
+    "links": [
+      {
+        "text": "View Live",
+        "url": "https://movie-pwa.vercel.app/",
+        "icon": "/assets/arrow-top-right.svg"
+      }
+    ],
+    "images": [
+      "/assets/movie-finder-mockup-small.png",
+      "/assets/movie-finder-mockup-large.png"
+    ]
+  },
+  {
+    "id": "color-game",
+    "title": "Color Game",
+    "platform": "Web",
+    "year": "2023",
+    "description": "A simple color matching game. Players must match the colors of the squares while avoiding the wrong square.",
+    "tags" : ["HTML", "CSS", "JavaScript"],
+    "features": [
+    "Player can select a square to match the color.", 
+    "Color disappears if the wrong square is selected.", 
+    "Game ends when the player selects the wrong square or matches all colors."
+  ],
+    "links": [
+      {
+        "text": "View Live",
+        "url": "https://hum00058.github.io/color-matching-game/",
+        "icon": "/assets/arrow-top-right.svg"
+      },
+      {
+        "text": "View Source",
+        "url": "https://github.com/hum00058/color-matching-game",
+        "icon": "/assets/code-icon.svg"
+      }
+    ],
+    "images": [
+      "/assets/color-game-mockup-small.png",
+      "/assets/color-game-mockup-large.png"
+    ]
+  }
+]
