@@ -34,13 +34,7 @@ export default function App() {
               className="text-sm font-bold"
               style={{ fontFamily: 'var(--font-space-sans)' }}
             >
-              I am a software engineer with a strong background in full-stack
-              development. I have experience working with a variety of
-              technologies including React, Node.js, and TypeScript. I am
-              passionate about creating efficient and scalable web applications,
-              and I enjoy solving complex problems and learning new skills. In
-              my free time, I like to contribute to open-source projects and
-              stay updated with the latest industry trends.
+              I am a full-stack developer with a passion for creating innovative and efficient solutions. I enjoy solving complex problems and learning new skills. My expertise spans across various technologies and platforms, enabling me to build robust and scalable applications. Beyond coding, I love listening to music, staying active, and exploring new technologies.
             </p>
           </div>
 

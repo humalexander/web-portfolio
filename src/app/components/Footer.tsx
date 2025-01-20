@@ -38,7 +38,7 @@ export default function Footer() {
               className="text-sm text-cyan-400 border border-cyan-400 px-2 py-1 rounded-xl"
               style={{ fontFamily: 'var(--font-space-mono)' }}
             >
-              v2.0.2
+              v2.0.3
             </span>
             <p
               className="text-xs uppercase opacity-75"
