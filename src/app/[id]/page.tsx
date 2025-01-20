@@ -32,7 +32,7 @@ export default function Project() {
               {project!.title}
             </span>
             <span
-              className="text-lg font-bold font-mono"
+              className="text-lg text-neutral-400 font-mono"
               style={{ fontFamily: 'var(--font-space-mono)' }}
             >
               {project!.platform}
@@ -74,7 +74,7 @@ export default function Project() {
               className="text-sm font-bold"
               style={{ fontFamily: 'var(--font-space-sans)' }}
             >
-              {project!.year}
+              {project!.date}
             </p>
           </div>
           <div>
@@ -96,38 +96,47 @@ export default function Project() {
           >
             Features
           </p>
-          <ul>
+          <ul className="list-disc ml-4 pt-2">
             {project!.features.map((feature) => (
               <li
                 key={feature}
-                className="text-sm font-bold my-2"
+                className="text-sm font-bold mt-2"
                 style={{ fontFamily: 'var(--font-space-sans)' }}
               >
                 {feature}
               </li>
             ))}
           </ul>
+          <div className="flex justify-end gap-2">
+            {project!.links.map((link) => (
+              <a
+                key={link.url}
+                href={link.url}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-neutral-800 hover:bg-neutral-700 py-2 px-4 rounded-md mt-4"
+                style={{ fontFamily: 'var(--font-space-sans)' }}
+              >
+                <span className="text-neutral-400 font-bold">{link.text}</span>
+                <Image
+                  src={link.icon}
+                  alt={link.text}
+                  width={20}
+                  height={20}
+                  className="inline ml-2"
+                />
+              </a>
+            ))}
+          </div>
         </div>
-        <div className="flex justify-end gap-2">
-          {project!.links.map((link) => (
-            <a
-              key={link.url}
-              href={link.url}
-              target="_blank"
-              rel="noreferrer"
-              className="bg-neutral-800 hover:bg-neutral-700 py-2 px-4 rounded-md mt-4"
-              style={{ fontFamily: 'var(--font-space-sans)' }}
-            >
-              <span className="text-neutral-400 font-bold">{link.text}</span>
-              <Image
-                src={link.icon}
-                alt={link.text}
-                width={20}
-                height={20}
-                className="inline ml-2"
-              />
-            </a>
-          ))}
+        <div>
+          <Image
+            src={project!.images[0]}
+            alt={project!.title}
+            width={2000}
+            height={1600}
+            className="w-full h-auto object-cover"
+          />
         </div>
       </div>
       <Footer />

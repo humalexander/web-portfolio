@@ -404,7 +404,7 @@ export default function App() {
                       {project.title}
                     </h3>
                     <p
-                      className="text-lg font-bold"
+                      className="text-lg text-neutral-400 font-bold"
                       style={{ fontFamily: 'var(--font-space-mono)' }}
                     >
                       {project.platform}
@@ -412,13 +412,7 @@ export default function App() {
                   </div>
                   <div>
                     <p
-                      className="text-neutral-400 text-md font-bold my-2"
-                      style={{ fontFamily: 'var(--font-space-mono)' }}
-                    >
-                      {project.year}
-                    </p>
-                    <p
-                      className="text-sm font-bold"
+                      className="text-sm font-bold pt-2"
                       style={{ fontFamily: 'var(--font-space-sans)' }}
                     >
                       {project.description}
