@@ -81,7 +81,7 @@ export default function Project() {
             {project!.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-sm font-bold text-neutral-400 bg-neutral-800 p-2 rounded-md mr-2"
+                className="text-sm font-bold rounded-md mr-2"
                 style={{ fontFamily: 'var(--font-space-sans)' }}
               >
                 {tag}
@@ -89,14 +89,14 @@ export default function Project() {
             ))}
           </div>
         </div>
-        <div className="flex gap-2">
+        <div className="flex justify-end gap-2">
           {project!.links.map((link) => (
             <a
               key={link.url}
               href={link.url}
               target="_blank"
               rel="noreferrer"
-              className=" bg-neutral-800 hover:bg-neutral-700 py-2 px-4 rounded-md mt-4"
+              className="bg-neutral-800 hover:bg-neutral-700 py-2 px-4 rounded-md mt-4"
               style={{ fontFamily: 'var(--font-space-sans)' }}
             >
               <span className="text-neutral-400 font-bold">{link.text}</span>

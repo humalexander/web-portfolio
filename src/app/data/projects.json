@@ -55,35 +55,5 @@
       "/assets/movie-finder-mockup-small.png",
       "/assets/movie-finder-mockup-large.png"
     ]
-  },
-  {
-    "id": "color-game",
-    "title": "Color Game",
-    "platform": "Web",
-    "type": "Personal Project",
-    "year": "2023",
-    "description": "A simple color matching game. Players must match the colors of the squares while avoiding the wrong square.",
-    "tags" : ["HTML", "CSS", "JavaScript"],
-    "features": [
-    "Player can select a square to match the color.", 
-    "Color disappears if the wrong square is selected.", 
-    "Game ends when the player selects the wrong square or matches all colors."
-  ],
-    "links": [
-      {
-        "text": "View Live",
-        "url": "https://hum00058.github.io/color-matching-game/",
-        "icon": "/assets/arrow-top-right.svg"
-      },
-      {
-        "text": "View Source",
-        "url": "https://github.com/hum00058/color-matching-game",
-        "icon": "/assets/code-icon.svg"
-      }
-    ],
-    "images": [
-      "/assets/color-game-mockup-small.png",
-      "/assets/color-game-mockup-large.png"
-    ]
   }
 ]

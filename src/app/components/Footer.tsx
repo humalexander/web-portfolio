@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 export default function Footer() {
   return (
     <footer className="bg-neutral-900 border-t border-neutral-700">
@@ -35,7 +33,7 @@ export default function Footer() {
           </span>
         </div>
         <div className="flex flex-col pt-4 pb-2">
-          <div className="flex gap-4 items-center mb-2">
+          <div className="flex gap-4 items-center mb-4">
             <span
               className="text-sm text-cyan-400 border border-cyan-400 px-2 py-1 rounded-xl"
               style={{ fontFamily: 'var(--font-space-mono)' }}
@@ -63,22 +61,30 @@ export default function Footer() {
           </span>
         </div>
         <div className="flex gap-4 pt-4 pb-4 border-t-2 border-gray-400">
-          <a href="https://github.com/hum00058">
-            <Image
-              src="/assets/github.svg"
-              alt="GitHub Logo"
-              width={50}
-              height={50}
-            />
-          </a>
-          <a href="https://www.linkedin.com/in/alexander-hum-2710922a1">
-            <Image
-              src="/assets/linkedin.svg"
-              alt="LinkedIn Logo"
-              width={50}
-              height={50}
-            />
-          </a>
+          <div>
+            <a
+              href="https://github.com/hum00058"
+              target="_blank"
+              className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
+            >
+              GitHub
+            </a>
+            <sup className="font-mono leading-[0] text-[10px] font-light text-cyan-400">
+              *
+            </sup>
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/alexander-hum-2710922a1"
+              target="_blank"
+              className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
+            >
+              LinkedIn
+            </a>
+            <sup className="font-mono leading-[0] text-[10px] font-light text-cyan-400">
+              *
+            </sup>
+          </div>
         </div>
       </div>
     </footer>

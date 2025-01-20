@@ -176,11 +176,35 @@ export default function App() {
               </li>
               <li style={{ fontFamily: 'var(--font-space-sans)' }}>
                 <a
-                  href="https://flutter.dev/"
+                  href="https://dotnet.microsoft.com/en-us/"
                   target="_blank"
                   className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
                 >
-                  Flutter
+                  .NET
+                </a>
+                <sup className="font-mono leading-[0] text-[10px] font-light text-cyan-400">
+                  *
+                </sup>
+              </li>
+              <li style={{ fontFamily: 'var(--font-space-sans)' }}>
+                <a
+                  href="https://dotnet.microsoft.com/en-us/"
+                  target="_blank"
+                  className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
+                >
+                  MySQL
+                </a>
+                <sup className="font-mono leading-[0] text-[10px] font-light text-cyan-400">
+                  *
+                </sup>
+              </li>
+              <li style={{ fontFamily: 'var(--font-space-sans)' }}>
+                <a
+                  href="https://dotnet.microsoft.com/en-us/"
+                  target="_blank"
+                  className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
+                >
+                  MongoDB
                 </a>
                 <sup className="font-mono leading-[0] text-[10px] font-light text-cyan-400">
                   *
@@ -212,14 +236,6 @@ export default function App() {
             </li>
             <li>
               <Image
-                src={'/assets/javascript.svg'}
-                alt="JavaScript"
-                width={50}
-                height={50}
-              />
-            </li>
-            <li>
-              <Image
                 src={'/assets/typescript.svg'}
                 alt="TypeScript"
                 width={50}
@@ -236,8 +252,24 @@ export default function App() {
             </li>
             <li>
               <Image
-                src={'/assets/flutter.svg'}
-                alt="Flutter"
+                src={'/assets/csharp.svg'}
+                alt="C#"
+                width={50}
+                height={50}
+              />
+            </li>
+            <li>
+              <Image
+                src={'/assets/mysql.svg'}
+                alt="C#"
+                width={50}
+                height={50}
+              />
+            </li>
+            <li>
+              <Image
+                src={'/assets/mongodb.svg'}
+                alt="C#"
                 width={50}
                 height={50}
               />
@@ -264,14 +296,6 @@ export default function App() {
             </li>
             <li>
               <Image
-                src={'/assets/javascript.svg'}
-                alt="JavaScript"
-                width={50}
-                height={50}
-              />
-            </li>
-            <li>
-              <Image
                 src={'/assets/typescript.svg'}
                 alt="TypeScript"
                 width={50}
@@ -288,8 +312,24 @@ export default function App() {
             </li>
             <li>
               <Image
-                src={'/assets/flutter.svg'}
-                alt="Flutter"
+                src={'/assets/csharp.svg'}
+                alt="C#"
+                width={50}
+                height={50}
+              />
+            </li>
+            <li>
+              <Image
+                src={'/assets/mysql.svg'}
+                alt="C#"
+                width={50}
+                height={50}
+              />
+            </li>
+            <li>
+              <Image
+                src={'/assets/mongodb.svg'}
+                alt="C#"
                 width={50}
                 height={50}
               />
