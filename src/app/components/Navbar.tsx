@@ -7,14 +7,14 @@ export default function Navbar() {
         <div className="flex justify-between items-center pb-2 border-b border-neutral-700">
           <Link href="/">
             <span
-              className="text-md hover:text-cyan-400"
+              className="text-md font-bold hover:text-cyan-400"
               style={{ fontFamily: 'var(--font-space-mono)' }}
             >
               Alexander Hum
             </span>
           </Link>
           <span
-            className="text-sm"
+            className="text-sm uppercase text-neutral-400"
             style={{ fontFamily: 'var(--font-space-mono)' }}
           >
             Full-Stack Developer
