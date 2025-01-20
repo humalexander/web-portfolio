@@ -78,20 +78,37 @@ export default function Project() {
             </p>
           </div>
           <div>
-            <p
-              className="text-sm font-bold"
+            {project!.tags.map((tag) => (
+              <span
+                key={tag}
+                className="text-sm font-bold text-neutral-400 bg-neutral-800 p-2 rounded-md mr-2"
+                style={{ fontFamily: 'var(--font-space-sans)' }}
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+        <div className="flex gap-2">
+          {project!.links.map((link) => (
+            <a
+              key={link.url}
+              href={link.url}
+              target="_blank"
+              rel="noreferrer"
+              className=" bg-neutral-800 hover:bg-neutral-700 py-2 px-4 rounded-md mt-4"
               style={{ fontFamily: 'var(--font-space-sans)' }}
             >
-              {project!.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="text-neutral-400 bg-neutral-800 p-2 rounded-md mr-2"
-                >
-                  {tag}
-                </span>
-              ))}
-            </p>
-          </div>
+              <span className="text-neutral-400 font-bold">{link.text}</span>
+              <Image
+                src={link.icon}
+                alt={link.text}
+                width={20}
+                height={20}
+                className="inline ml-2"
+              />
+            </a>
+          ))}
         </div>
       </div>
       <Footer />

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="bg-neutral-900">
+    <footer className="bg-neutral-900 border-t border-neutral-700">
       <div className="container mx-auto p-4">
         <div className="pb-8">
           <h2
