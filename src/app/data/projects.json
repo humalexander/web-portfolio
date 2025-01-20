@@ -6,7 +6,7 @@
     "type": "Personal Project",
     "year": "2024",
     "description": "A native iOS app that displays the current weather for a saved location, utilizing Apple's WeatherKit.",
-    "tags" : ["Swift", "UIKit", "WeatherKit"],
+    "tags" : ["Swift", "XCode", "UIKit", "WeatherKit"],
     "features": ["User can save a location to view the current weather.", "User can view the current weather for the saved location."],
     "links": [],
     "images": [
@@ -21,7 +21,7 @@
     "type": "Personal Project",
     "year": "2024",
     "description": "A React web app that displays the current weather for a saved location, utilizing the OpenWeatherMap API.",
-    "tags" : ["React", "API Integration"],
+    "tags" : ["React", "JavaScript", "CSS", "API Integration"],
     "features": ["User can save a location to view the current weather.", "User can view the current weather for the saved location."],
     "links": [
       {
@@ -42,7 +42,7 @@
     "type": "Personal Project",
     "year": "2024",
     "description": "A progressive web app that allows users to search for movies and view details, utilizing the TMDb API.",
-    "tags" : ["JavaScript", "API Integration"],
+    "tags" : ["Progressive Web App", "JavaScript", "Service Worker API"],
     "features": ["User can search for movies by title.", "User can view details of a movie."],
     "links": [
       {

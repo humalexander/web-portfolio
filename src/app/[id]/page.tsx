@@ -53,6 +53,46 @@ export default function Project() {
             {project!.description}
           </p>
         </div>
+        <div className="grid grid-cols-[auto,1fr] gap-x-12 gap-y-4 my-2">
+          {/* Header Row */}
+          <p
+            className="text-sm uppercase opacity-75 mt-2"
+            style={{ fontFamily: 'var(--font-space-mono)' }}
+          >
+            Year
+          </p>
+          <p
+            className="text-sm uppercase opacity-75 mt-2"
+            style={{ fontFamily: 'var(--font-space-mono)' }}
+          >
+            Tags
+          </p>
+
+          {/* Data Rows */}
+          <div>
+            <p
+              className="text-sm font-bold"
+              style={{ fontFamily: 'var(--font-space-sans)' }}
+            >
+              {project!.year}
+            </p>
+          </div>
+          <div>
+            <p
+              className="text-sm font-bold"
+              style={{ fontFamily: 'var(--font-space-sans)' }}
+            >
+              {project!.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="text-neutral-400 bg-neutral-800 p-2 rounded-md mr-2"
+                >
+                  {tag}
+                </span>
+              ))}
+            </p>
+          </div>
+        </div>
       </div>
       <Footer />
     </>

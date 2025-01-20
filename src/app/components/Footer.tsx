@@ -9,7 +9,7 @@ export default function Footer() {
             className="text-xl font-semibold py-2"
             style={{ fontFamily: 'var(--font-space-mono)' }}
           >
-            Get in Touch.
+            Get in <span className="text-cyan-400">Touch.</span>
           </h2>
           <p
             className="text-sm font-bold"
@@ -17,13 +17,22 @@ export default function Footer() {
           >
             I&apos;d love to help you create your next big idea.
           </p>
-          <a
-            href="mailto:alexanderhum@icloud.com"
-            className="block w-full text-black bg-white font-bold py-2 px-4 rounded-md mt-4"
-            style={{ fontFamily: 'var(--font-space-mono)' }}
-          >
-            Contact
-          </a>
+          <span>
+            <a
+              href="mailto:alexanderhum@icloud.com"
+              target="_blank"
+              rel="noreferrer"
+              className="block w-full bg-neutral-800 py-2 px-4 rounded-md mt-4"
+              style={{ fontFamily: 'var(--font-space-sans)' }}
+            >
+              <span className=" text-white hover:text-cyan-400 font-bold underline underline-offset-2">
+                alexanderhum@icloud.com
+              </span>
+              <sup className="font-mono leading-[0] text-[10px] font-light text-cyan-400">
+                *
+              </sup>
+            </a>
+          </span>
         </div>
         <div className="flex flex-col pt-4 pb-2">
           <div className="flex gap-4 items-center mb-2">

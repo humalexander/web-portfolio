@@ -114,41 +114,77 @@ export default function App() {
               TECHNOLOGY
             </p>
             <ul className="flex flex-wrap gap-4">
-              <li
-                className="text-sm font-bold"
-                style={{ fontFamily: 'var(--font-space-sans)' }}
-              >
-                Swift
+              <li style={{ fontFamily: 'var(--font-space-sans)' }}>
+                <a
+                  href="https://developer.apple.com/swift/"
+                  target="_blank"
+                  className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
+                >
+                  Swift
+                </a>
+                <sup className="font-mono leading-[0] text-[10px] font-light text-cyan-400">
+                  *
+                </sup>
               </li>
-              <li
-                className="text-sm font-bold"
-                style={{ fontFamily: 'var(--font-space-sans)' }}
-              >
-                Kotlin
+              <li style={{ fontFamily: 'var(--font-space-sans)' }}>
+                <a
+                  href="https://kotlinlang.org/"
+                  target="_blank"
+                  className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
+                >
+                  Kotlin
+                </a>
+                <sup className="font-mono leading-[0] text-[10px] font-light text-cyan-400">
+                  *
+                </sup>
               </li>
-              <li
-                className="text-sm font-bold"
-                style={{ fontFamily: 'var(--font-space-sans)' }}
-              >
-                TypeScript
+              <li style={{ fontFamily: 'var(--font-space-sans)' }}>
+                <a
+                  href="https://www.typescriptlang.org/"
+                  target="_blank"
+                  className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
+                >
+                  TypeScript
+                </a>
+                <sup className="font-mono leading-[0] text-[10px] font-light text-cyan-400">
+                  *
+                </sup>
               </li>
-              <li
-                className="text-sm font-bold"
-                style={{ fontFamily: 'var(--font-space-sans)' }}
-              >
-                React
+              <li style={{ fontFamily: 'var(--font-space-sans)' }}>
+                <a
+                  href="https://react.dev/"
+                  target="_blank"
+                  className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
+                >
+                  React
+                </a>
+                <sup className="font-mono leading-[0] text-[10px] font-light text-cyan-400">
+                  *
+                </sup>
               </li>
-              <li
-                className="text-sm font-bold"
-                style={{ fontFamily: 'var(--font-space-sans)' }}
-              >
-                React Native
+              <li style={{ fontFamily: 'var(--font-space-sans)' }}>
+                <a
+                  href="https://reactnative.dev/"
+                  target="_blank"
+                  className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
+                >
+                  React Native
+                </a>
+                <sup className="font-mono leading-[0] text-[10px] font-light text-cyan-400">
+                  *
+                </sup>
               </li>
-              <li
-                className="text-sm font-bold"
-                style={{ fontFamily: 'var(--font-space-sans)' }}
-              >
-                Flutter
+              <li style={{ fontFamily: 'var(--font-space-sans)' }}>
+                <a
+                  href="https://flutter.dev/"
+                  target="_blank"
+                  className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
+                >
+                  Flutter
+                </a>
+                <sup className="font-mono leading-[0] text-[10px] font-light text-cyan-400">
+                  *
+                </sup>
               </li>
             </ul>
           </div>
@@ -300,7 +336,7 @@ export default function App() {
                       | 'Client Project'
                   )
                 }
-                className="text-sm text-neutral-400 bg-neutral-800 hover:bg-neutral-700 py-2 px-4 rounded-md"
+                className="text-sm text-neutral-400 bg-neutral-900 hover:bg-neutral-800 py-2 px-4 rounded-md"
                 style={{ fontFamily: 'var(--font-space-sans)' }}
               >
                 <option value="All">All</option>
@@ -349,7 +385,7 @@ export default function App() {
                     </p>
                     <Link href={`/${project.id}`} className="flex justify-end">
                       <span
-                        className="text-sm text-neutral-400 bg-neutral-800 hover:bg-neutral-500 uppercase py-2 px-8 rounded-md mt-4"
+                        className="text-sm text-neutral-400 bg-neutral-900 hover:bg-neutral-800 py-2 px-8 rounded-md mt-4"
                         style={{ fontFamily: 'var(--font-space-sans)' }}
                       >
                         View Project
@@ -362,9 +398,7 @@ export default function App() {
           </div>
         </div>
       </section>
-      <div className="sticky bottom-0 -z-20">
-        <Footer />
-      </div>
+      <Footer />
     </>
   )
 }
