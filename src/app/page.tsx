@@ -391,8 +391,8 @@ export default function App() {
                 <Image
                   src={project.images[0]}
                   alt={project.title}
-                  width={300}
-                  height={200}
+                  width={600}
+                  height={400}
                   className="bg-cover bg-center w-full rounded-t-lg"
                 />
                 <div className="flex flex-col justify-between text-white p-4 rounded-b-lg">

@@ -55,5 +55,47 @@
       "/assets/movie-finder-mockup-small.png",
       "/assets/movie-finder-mockup-large.png"
     ]
+  },
+  {
+    "id": "face-detection",
+    "title": "Face Detection",
+    "platform": "Web",
+    "type": "Personal Project",
+    "date": "12-2023",
+    "description": "An image search with face detection utilizing the MediaPipe model.",
+    "tags" : ["JavaScript", "Model Integration"],
+    "features": ["User can search for an image using a key word.", "User can save image to cache.", "Saved images can be scanned with face detection."],
+    "links": [
+      {
+        "text": "View Live",
+        "url": "https://hum00058.github.io/mad9014-final-project/",
+        "icon": "/assets/arrow-top-right.svg"
+      }
+    ],
+    "images": [
+      "/assets/face-detection-mockup-small.png",
+      "/assets/face-detection-mockup-large.png"
+    ]
+  },
+  {
+    "id": "adventure-cooperative",
+    "title": "Adventure Co-operative",
+    "platform": "Web",
+    "type": "Personal Project",
+    "date": "11-2023",
+    "description": "A two-page mobile responsive website for a fictional cooperative board game app.",
+    "tags" : ["HTML", "CSS", "JavaScript"],
+    "features": ["Responsive design for mobile and desktop.", "Interactive elements for user engagement."],
+    "links": [
+      {
+        "text": "View Live",
+        "url": "https://hum00058.github.io/mad9013-project-two-page-site/index.html",
+        "icon": "/assets/arrow-top-right.svg"
+      }
+    ],
+    "images": [
+      "/assets/adventure-cooperative-mockup-small.png",
+      "/assets/adventure-cooperative-mockup-large.png"
+    ]
   }
 ]
