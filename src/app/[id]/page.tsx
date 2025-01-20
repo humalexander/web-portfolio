@@ -89,6 +89,25 @@ export default function Project() {
             ))}
           </div>
         </div>
+        <div className="my-4">
+          <p
+            className="text-sm uppercase opacity-75 mt-2"
+            style={{ fontFamily: 'var(--font-space-mono)' }}
+          >
+            Features
+          </p>
+          <ul>
+            {project!.features.map((feature) => (
+              <li
+                key={feature}
+                className="text-sm font-bold my-2"
+                style={{ fontFamily: 'var(--font-space-sans)' }}
+              >
+                {feature}
+              </li>
+            ))}
+          </ul>
+        </div>
         <div className="flex justify-end gap-2">
           {project!.links.map((link) => (
             <a

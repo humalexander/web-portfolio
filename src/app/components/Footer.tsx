@@ -38,13 +38,13 @@ export default function Footer() {
               className="text-sm text-cyan-400 border border-cyan-400 px-2 py-1 rounded-xl"
               style={{ fontFamily: 'var(--font-space-mono)' }}
             >
-              v2.0.0
+              v2.0.1
             </span>
             <p
               className="text-xs uppercase opacity-75"
               style={{ fontFamily: 'var(--font-space-mono)' }}
             >
-              Last updated 19-01-2025
+              Last updated 20-01-2025
             </p>
           </div>
           <p
@@ -60,7 +60,7 @@ export default function Footer() {
             Designed & developed by Alexander Hum @ 2025
           </span>
         </div>
-        <div className="flex gap-4 pt-4 pb-4 border-t-2 border-gray-400">
+        <div className="flex gap-4 pt-4 pb-4 border-t border-neutral-700">
           <div>
             <a
               href="https://github.com/hum00058"
