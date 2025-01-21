@@ -38,7 +38,7 @@ export default function Footer() {
               className="text-sm text-cyan-400 border border-cyan-400 px-2 py-1 rounded-xl"
               style={{ fontFamily: 'var(--font-space-mono)' }}
             >
-              v2.0.3
+              v2.0.4
             </span>
             <p
               className="text-xs uppercase opacity-75"
@@ -66,6 +66,7 @@ export default function Footer() {
               href="https://github.com/hum00058"
               target="_blank"
               className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
+              style={{ fontFamily: 'var(--font-space-mono)' }}
             >
               GitHub
             </a>
@@ -78,12 +79,21 @@ export default function Footer() {
               href="https://www.linkedin.com/in/alexander-hum-2710922a1"
               target="_blank"
               className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
+              style={{ fontFamily: 'var(--font-space-mono)' }}
             >
               LinkedIn
             </a>
             <sup className="font-mono leading-[0] text-[10px] font-light text-cyan-400">
               *
             </sup>
+          </div>
+          <div className="flex gap-2 items-center">
+            <span className="text-sm uppercase text-neutral-400 font-bold" style={{ fontFamily: 'var(--font-space-mono)' }}>
+              Currently Reading:
+            </span>
+            <span className="text-sm font-bold" style={{ fontFamily: 'var(--font-space-sans)' }}>
+              Red Rising by Pierce Brown
+            </span>
           </div>
         </div>
       </div>

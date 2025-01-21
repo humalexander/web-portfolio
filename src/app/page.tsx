@@ -35,7 +35,7 @@ export default function App() {
               className="text-sm font-bold"
               style={{ fontFamily: 'var(--font-space-sans)' }}
             >
-              I am a full-stack developer with a passion for creating innovative and efficient solutions. I enjoy solving complex problems and learning new skills. My expertise spans across various technologies and platforms, enabling me to build robust and scalable applications. Beyond coding, I love listening to music, staying active, and exploring new technologies.
+              I am a full-stack developer with a passion for creating innovative and efficient solutions. I enjoy solving complex problems and learning new skills. My expertise spans across various technologies and platforms, enabling me to build robust and scalable applications. Beyond coding, I love listening to music, reading, staying active, and exploring new technologies.
             </p>
           </div>
 
