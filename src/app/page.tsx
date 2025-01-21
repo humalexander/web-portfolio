@@ -22,10 +22,11 @@ export default function App() {
     <>
       <Navbar />
       <section id="banner" className="bg-neutral-900">
-        <div className="container mx-auto p-4">
-          <div className="flex flex-col mb-4">
+        <div className="container mx-auto p-4 pt-0">
+          <div className="flex flex-col lg:flex-row justify-between">
+          <div id="about" className="flex flex-col mb-4 max-w-sm sm:pr-8">
             <span
-              className="mb-4 text-sm uppercase opacity-75"
+              className="mb-4 text-sm uppercase opacity-75 mt-2"
               style={{ fontFamily: 'var(--font-space-mono)' }}
             >
               About
@@ -38,6 +39,7 @@ export default function App() {
             </p>
           </div>
 
+          <div id='experience-description-technology'>
           <div className="grid grid-cols-[auto,1fr] gap-x-12 gap-y-4 mb-2">
             {/* Header Row */}
             <p
@@ -205,6 +207,8 @@ export default function App() {
                 </sup>
               </li>
             </ul>
+          </div>
+          </div>
           </div>
         </div>
       </section>
