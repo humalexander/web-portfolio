@@ -60,7 +60,7 @@ export default function Footer() {
             Designed & developed by Alexander Hum @ 2025
           </span>
         </div>
-        <div className="flex gap-4 pt-4 pb-4 border-t border-neutral-700">
+        <div className="flex gap-8 pt-4 pb-4 border-t border-neutral-700">
           <div>
             <a
               href="https://github.com/hum00058"
@@ -87,7 +87,7 @@ export default function Footer() {
               *
             </sup>
           </div>
-          <div className="flex gap-2 items-center">
+          <div className="flex flex-col">
             <span className="text-sm uppercase text-neutral-400 font-bold" style={{ fontFamily: 'var(--font-space-mono)' }}>
               Currently Reading:
             </span>

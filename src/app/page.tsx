@@ -184,7 +184,7 @@ export default function App() {
               </li>
               <li style={{ fontFamily: 'var(--font-space-sans)' }}>
                 <a
-                  href="https://dotnet.microsoft.com/en-us/"
+                  href="https://www.mysql.com/"
                   target="_blank"
                   className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
                 >
@@ -196,7 +196,7 @@ export default function App() {
               </li>
               <li style={{ fontFamily: 'var(--font-space-sans)' }}>
                 <a
-                  href="https://dotnet.microsoft.com/en-us/"
+                  href="https://www.mongodb.com/"
                   target="_blank"
                   className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
                 >
@@ -334,18 +334,6 @@ export default function App() {
             </li>
           </ul>
         </div>
-
-        {/* <div className="flex flex-col my-4">
-            <h3 className="text-3xl font-bold opacity-75 hover:opacity-100">
-              Cross-platform Development
-            </h3>
-            <h3 className="text-3xl font-bold opacity-75 hover:opacity-100">
-              Native Mobile Development
-            </h3>
-            <h3 className="text-3xl font-bold opacity-75 hover:opacity-100">
-              Web Development
-            </h3>
-          </div> */}
       </section>
 
       <section id="projects" className="pb-4 bg-neutral-950">
