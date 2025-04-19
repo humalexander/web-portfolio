@@ -16,5 +16,5 @@ export const getBlogs = async () => {
   }
 
   const data = await res.json()
-  return [data.feed, data.items]
+  return data.items
 }
