@@ -10,7 +10,7 @@ export default function Footer() {
             Get in <span className="text-cyan-400">Touch.</span>
           </h2>
           <p
-            className="text-sm font-bold"
+            className="text-sm"
             style={{ fontFamily: 'var(--font-space-sans)' }}
           >
             I&apos;d love to help you create your next big idea.
@@ -38,13 +38,13 @@ export default function Footer() {
               className="text-sm text-cyan-400 border border-cyan-400 px-2 py-1 rounded-xl"
               style={{ fontFamily: 'var(--font-space-mono)' }}
             >
-              v2.0.4
+              v2.1.4
             </span>
             <p
               className="text-xs uppercase opacity-75"
               style={{ fontFamily: 'var(--font-space-mono)' }}
             >
-              Last updated 20-01-2025
+              Last updated 2025-04-18
             </p>
           </div>
           <p
@@ -63,7 +63,7 @@ export default function Footer() {
         <div className="flex gap-8 pt-4 pb-4 border-t border-neutral-700">
           <div>
             <a
-              href="https://github.com/hum00058"
+              href="https://github.com/humalexander"
               target="_blank"
               className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
               style={{ fontFamily: 'var(--font-space-mono)' }}
@@ -76,7 +76,7 @@ export default function Footer() {
           </div>
           <div>
             <a
-              href="https://www.linkedin.com/in/alexander-hum-2710922a1"
+              href="https://www.linkedin.com/in/alexander-hum"
               target="_blank"
               className="hover:text-cyan-400 text-sm font-bold underline underline-offset-2"
               style={{ fontFamily: 'var(--font-space-mono)' }}
@@ -86,14 +86,6 @@ export default function Footer() {
             <sup className="font-mono leading-[0] text-[10px] font-light text-cyan-400">
               *
             </sup>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-sm uppercase text-neutral-400 font-bold" style={{ fontFamily: 'var(--font-space-mono)' }}>
-              Currently Reading:
-            </span>
-            <span className="text-sm font-bold" style={{ fontFamily: 'var(--font-space-sans)' }}>
-              Red Rising by Pierce Brown
-            </span>
           </div>
         </div>
       </div>

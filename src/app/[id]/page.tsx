@@ -15,7 +15,7 @@ export default function Project() {
       <div className="sticky top-0 z-50">
         <Navbar />
       </div>
-      <div className="container mx-auto p-4 pt-0">
+      <div className="container mx-auto p-4 pt-0 bg-neutral-950">
         <Image
           src={project!.images[1]}
           alt={project!.title}

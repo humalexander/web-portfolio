@@ -1,7 +1,22 @@
 [
   {
-    "id": "weather-watch-ios",
-    "title": "Weather Watch",
+    "id": "algonquin-times",
+    "title": "Algonquin Times Mobile App",
+    "platform": "iOS, Android",
+    "type": "Client Project",
+    "date": "04-2025",
+    "description": "A native iOS app that displays the current weather for a saved location, utilizing Apple's WeatherKit.",
+    "tags" : ["React Native", "API Integration", "WordPress"],
+    "features": ["User can save a location to view the current weather.", "User can view the current weather for the saved location."],
+    "links": [],
+    "images": [
+      "/assets/weather-watch-ios-mockup-small.png",
+      "/assets/weather-watch-ios-mockup-large.png"
+    ]
+  },
+  {
+    "id": "weatherly-ios",
+    "title": "Weatherly",
     "platform": "iOS",
     "type": "Personal Project",
     "date": "12-2024",
@@ -15,8 +30,8 @@
     ]
   },
   {
-    "id": "weather-watch-web",
-    "title": "Weather Watch",
+    "id": "weather-app-web",
+    "title": "Weather App",
     "platform": "Web",
     "type": "Personal Project",
     "date": "04-2024",
