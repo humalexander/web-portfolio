@@ -3,7 +3,15 @@ import { getBlogs } from '../data/blogs'
 import Link from 'next/link'
 
 export default function Blogs() {
-  const [blogs, setBlogs] = useState([])
+  interface BlogArticle {
+    guid?: string
+    link: string
+    pubDate: string
+    title: string
+    categories: string[]
+  }
+
+  const [blogs, setBlogs] = useState<BlogArticle[]>([])
 
   useEffect(() => {
     const loadBlogs = async () => {
