@@ -35,7 +35,7 @@ export default function Blogs() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {blogs.map((article) => (
               <div
-                key={article.guid}
+                key={article.guid || article.link}
                 className="bg-neutral-800 p-4 rounded-lg shadow-md"
               >
                 <div className="w-full flex flex-col justify-between h-full">
