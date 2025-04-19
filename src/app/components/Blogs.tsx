@@ -1,17 +1,14 @@
 import { useEffect, useState } from 'react'
 import { getBlogs } from '../data/blogs'
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Blogs() {
-  const [info, setInfo] = useState()
   const [blogs, setBlogs] = useState([])
 
   useEffect(() => {
     const loadBlogs = async () => {
       try {
         const [info, data] = await getBlogs()
-        setInfo(info)
         setBlogs(data)
       } catch (err) {
         console.error('Error fetching blogs:', err)

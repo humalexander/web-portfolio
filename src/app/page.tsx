@@ -5,11 +5,10 @@ import Skills from './components/Skills'
 import Blogs from './components/Blogs'
 import Footer from './components/Footer'
 import projects from './data/projects.json'
-import { getBlogs } from './data/blogs'
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 export default function App() {
   const [filter, setFilter] = useState<
@@ -33,7 +32,7 @@ export default function App() {
                 className="text-3xl font-bold text-neutral-400 py-2"
                 style={{ fontFamily: 'var(--font-space-sans)' }}
               >
-                Hello, I'm Alexander
+                Hello, I&apos;m Alexander
               </h1>
               <p
                 className="text-md"
